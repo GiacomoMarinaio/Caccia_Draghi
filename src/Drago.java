@@ -12,7 +12,7 @@ public class Drago implements Runnable{
             System.out.println(this.getNome() + "vola " + (i+1));
         }
         try{
-            Thread.sleep(500);
+            Thread.sleep(1000);
         } catch(InterruptedException e){
             throw new RuntimeException(e);
         }
