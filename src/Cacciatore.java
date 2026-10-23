@@ -1,13 +1,15 @@
 public class Cacciatore {
     private String nome;
     private Thread drago;
+
     public Cacciatore(String nome){
         this.nome = nome;
     }
+
     public void lanciaDardi(Thread d){
         for(int i = 0; i <= 20; i++){
             try {
-                Thread.sleep(100);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 System.out.println("sleep error nel main: " + e);
             }
