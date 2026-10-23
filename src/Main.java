@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Dimmi quante volte batte le ali:");
         int numBattiti = sc.nextInt();
 
-        Thread giallo = new Thread(new Drago("Stefania ", numBattiti));
+        Thread giallo = new Thread(new Drago("Drago Bianco Polvere di Stelle ", numBattiti));
 
         giallo.start();
 
