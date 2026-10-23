@@ -10,5 +10,9 @@ public class Main {
 
         giallo.start();
 
+        for(int i = 0;i <=5; i++){
+            System.out.println("main continua a fare cos... i = " + i);
+        }
+
     }
 }
