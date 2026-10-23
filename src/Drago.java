@@ -8,13 +8,13 @@ public class Drago implements Runnable{
     }
 
     public void run(){
-        for(int i = 0; i < numBattiti; i++){
-            System.out.println(this.getNome() + "vola " + (i+1));
-        }
-        try{
-            Thread.sleep(1000);
-        } catch(InterruptedException e){
-            throw new RuntimeException(e);
+        for(int i = 0; i < numBattiti; i++) {
+            System.out.println(this.getNome() + "si libra nell'aria! Gioia immensa, al battito: " + (i + 1));
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println("sleep error:" + e);
+            }
         }
     }
 

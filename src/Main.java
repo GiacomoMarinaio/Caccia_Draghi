@@ -10,8 +10,13 @@ public class Main {
 
         giallo.start();
 
-        for(int i = 0;i <=5; i++){
-            System.out.println("main continua a fare cos... i = " + i);
+        for(int i = 0; i <= 10; i++){
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println("sleep error nel main: " + e);
+            }
+            System.out.println("main sta osservando il drago... i = " + i);
         }
 
     }
