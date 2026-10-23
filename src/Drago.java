@@ -22,7 +22,4 @@ public class Drago implements Runnable{
         return nome;
     }
 
-    public int getNumBattiti() {
-        return numBattiti;
-    }
 }
