@@ -5,10 +5,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dimmi quante volte batte le ali:");
         int numBattiti = sc.nextInt();
+        Cacciatore sangiorgio = new Cacciatore("Giorgio");
 
         Thread giallo = new Thread(new Drago("Drago Bianco Polvere di Stelle ", numBattiti));
-
         giallo.start();
+
+        sangiorgio.lanciaDardi(giallo);
 
         for(int i = 0; i <= 10; i++){
             try {
