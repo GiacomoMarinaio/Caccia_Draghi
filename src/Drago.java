@@ -8,12 +8,9 @@ public class Drago implements Runnable{
     }
 
     public void run(){
-        while(!Thread.interrupted()){
             for(int i = 0; (i < numBattiti) && !Thread.interrupted(); i++) {
                 System.out.println(this.getNome() + "si libra nell'aria! Gioia immensa, al battito: " + (i + 1));
-            }
         }
-
     }
 
     public String getNome() {
