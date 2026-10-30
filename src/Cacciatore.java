@@ -7,14 +7,15 @@ public class Cacciatore {
     }
 
     public void lanciaDardi(Thread d){
-        for(int i = 1; (i <= 20 ) && (!d.isInterrupted()); i++){
+        for(int i = 0; (i <= 20 ) && (!d.isInterrupted()); i++){
             try {
                 Thread.sleep(5);
                 d.interrupt();
+                System.out.println("il cacciatore " + nome +" sta lanciando il dardo = " + i);
             } catch (InterruptedException e) {
                 System.out.println("sleep error nel main: " + e);
             }
-            System.out.println("il cacciatore " + nome +" sta lanciando il dardo = " + i);
+
         }
     }
 }
