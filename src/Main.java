@@ -7,7 +7,7 @@ public class Main {
         int numBattiti = sc.nextInt();
         Cacciatore sangiorgio = new Cacciatore("Yugi Muto");
 
-        Thread giallo = new Thread(new Drago("Drago Bianco Polvere di Stelle ", numBattiti));
+        Thread giallo = new Thread(new Drago("Drago Bianco Occhi Blu ", numBattiti));
         giallo.start();
 
         sangiorgio.lanciaDardi(giallo);
